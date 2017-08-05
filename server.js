@@ -48,6 +48,11 @@ app.get('/about', (req, res) => {
     pageTitle: 'About Page'
   });
 });
+app.get('/programs', (req, res) => {
+  res.render('programs.hbs',{
+    pageTitle: 'Programs Portfolio'
+  });
+});
 
 app.get('/bad', (req, res) => {
   res.send({
